@@ -35,4 +35,8 @@ public class HelloMessage {
     public String sayHelloWithPost(@RequestBody User user) {
         return "Hello " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
     }
+    @PutMapping("/put/{firstName}")
+    public String sayHelloWithPut(@PathVariable String firstName, @RequestParam(value = "lastName") String lastName) {
+        return "Hello " + firstName + " " + lastName + " from BridgeLabz";
+    }
 }
