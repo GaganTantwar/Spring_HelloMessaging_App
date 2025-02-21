@@ -23,4 +23,8 @@ public class HelloMessage {
     public String deleteHello() {
         return "Hello from BridgeLabz (DELETE)";
     }
+    @GetMapping("/query")
+    public String sayHelloWithName(@RequestParam(value = "name", defaultValue = "World") String name) {
+        return "Hello " + name + " from BridgeLabz";
+    }
 }
