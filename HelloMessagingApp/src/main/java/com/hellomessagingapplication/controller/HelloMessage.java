@@ -9,18 +9,4 @@ public class HelloMessage {
         return "Hello from BridgeLabz (GET)";
     }
 
-    @PostMapping("/post")
-    public String postHello() {
-        return "Hello from BridgeLabz (POST)";
-    }
-
-    @PutMapping("/put")
-    public String putHello() {
-        return "Hello from BridgeLabz (PUT)";
-    }
-
-    @DeleteMapping("/delete")
-    public String deleteHello() {
-        return "Hello from BridgeLabz (DELETE)";
-    }
 }
